@@ -1,0 +1,49 @@
+"""
+Models Package
+──────────────
+Import all models here so Alembic can detect them.
+"""
+
+from app.models.user import User
+from app.models.contact import Contact
+from app.models.account import Account
+from app.models.lead import Lead
+from app.models.deal import Deal
+
+# ERP Models
+from app.models.category import Category
+from app.models.supplier import Supplier
+from app.models.warehouse import Warehouse
+from app.models.product import Product
+from app.models.inventory import Inventory
+from app.models.purchase_order import PurchaseOrder, PurchaseOrderItem
+from app.models.sales_order import SalesOrder, SalesOrderItem
+
+# Finance Models
+from app.models.finance_account import FinanceAccount
+from app.models.tax_rate import TaxRate
+from app.models.invoice import Invoice, InvoiceItem
+from app.models.expense import Expense
+from app.models.payment import Payment
+from app.models.journal_entry import JournalEntry, JournalEntryLine
+
+# Marketing Models
+from app.models.channel import Channel
+from app.models.campaign import Campaign
+from app.models.email_template import EmailTemplate
+from app.models.social_post import SocialPost
+from app.models.content_page import ContentPage
+from app.models.analytics_event import AnalyticsEvent
+
+__all__ = [
+    "User", "Contact", "Account", "Lead", "Deal",
+    "Category", "Supplier", "Warehouse", "Product", "Inventory",
+    "PurchaseOrder", "PurchaseOrderItem",
+    "SalesOrder", "SalesOrderItem",
+    "FinanceAccount", "TaxRate",
+    "Invoice", "InvoiceItem",
+    "Expense", "Payment",
+    "JournalEntry", "JournalEntryLine",
+    "Channel", "Campaign", "EmailTemplate",
+    "SocialPost", "ContentPage", "AnalyticsEvent",
+]
